@@ -1,39 +1,29 @@
 #include<iostream>
-#define UP      1 << 0
-#define DOWN    1 << 1
-#define LEFT    1 << 2
-#define RIGHT   1 << 3
-
-
 
 using namespace std;
 
+void armata_shoot(int count)
+
+{
+    for(int i = 0; i < count; i ++)
+    {
+        cout << "shoot" << endl;
+    }
+}
+
+#define TANK(model, name) model ## _ ## name
+
+
+
+
 main()
 {
+    double armata_weight = 49.5;
+    int armata_capasity = 3;
+    double armata_max_speed = 90;
+  
+
+   TANK(armata, shoot)(5);
     
-    int n = 0;
-    cout << "enter enter:";
-    cin >> n;
-
-    if(n == UP)
-    {
-        cout << "up";
-    }
-
-    else if(n == DOWN)
-    {
-        cout << "down";
-    }
-
-    else if(n == LEFT)
-    {
-        cout << "left";
-    }
-
-    else if(n == RIGHT)
-    {
-        cout << "right";
-    }
-
     
 }
