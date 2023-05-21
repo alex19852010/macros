@@ -2,28 +2,63 @@
 
 using namespace std;
 
-void armata_shoot(int count)
-
-{
-    for(int i = 0; i < count; i ++)
-    {
-        cout << "shoot" << endl;
-    }
-}
-
-#define TANK(model, name) model ## _ ## name
-
-
-
+ #define day1 "monday"
+ #define day2 "Tuesday"
+ #define day3 "wensday"
+ #define day4 "Thursday"
+ #define day5 "friday"
+ #define day6 "saturday"
+ #define day7 "sunday"
+ #define noday "error"
 
 main()
 {
-    double armata_weight = 49.5;
-    int armata_capasity = 3;
-    double armata_max_speed = 90;
-  
+   int day = 0;
+   while(1)
+   {
+    cout << "enter the day of week: ";
+    cin >> day;
 
-   TANK(armata, shoot)(5);
-    
-    
+    if(day == 1)
+    {
+     cout << day1 << endl;
+    }
+
+    if(day == 2)
+    {
+     cout << day2 << endl;
+    }
+
+    if(day == 3)
+    {
+     cout << day3 << endl;
+    }
+
+   if(day == 4)
+    {
+     cout << day4 << endl;
+    }
+
+   if(day == 5)
+    {
+     cout << day5 << endl;
+    }
+
+   if(day == 6)
+    {
+    cout << day6 << endl;
+    }
+
+   if(day == 7)
+    {
+    cout << day7 << endl;
+    }
+
+   if(day <= 0 || day > 7)
+    {
+    cout << noday << endl;
+    }
+   }
+   
+  return 0;  
 }
