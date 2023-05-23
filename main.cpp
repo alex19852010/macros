@@ -1,64 +1,23 @@
+
 #include<iostream>
+#include<string>
 
 using namespace std;
 
- #define day1 "monday"
- #define day2 "Tuesday"
- #define day3 "wensday"
- #define day4 "Thursday"
- #define day5 "friday"
- #define day6 "saturday"
- #define day7 "sunday"
- #define noday "error"
+#define WEEK(number)DAY_## number
+#define DAY_1 "the day is monday"
+#define DAY_2 "the day is Tuesday"
+#define DAY_3 "the day is Wednesday"
+#define DAY_4 "the day is Thursday"
+#define DAY_5 "the day is friday"
+#define DAY_6 "the day is Saturday"
+#define DAY_7 "the day is Sunday"
+
 
 main()
 {
-   int day = 0;
-   while(1)
-   {
-    cout << "enter the day of week: ";
-    cin >> day;
 
-    if(day == 1)
-    {
-     cout << day1 << endl;
-    }
-
-    if(day == 2)
-    {
-     cout << day2 << endl;
-    }
-
-    if(day == 3)
-    {
-     cout << day3 << endl;
-    }
-
-   if(day == 4)
-    {
-     cout << day4 << endl;
-    }
-
-   if(day == 5)
-    {
-     cout << day5 << endl;
-    }
-
-   if(day == 6)
-    {
-    cout << day6 << endl;
-    }
-
-   if(day == 7)
-    {
-    cout << day7 << endl;
-    }
-
-   if(day <= 0 || day > 7)
-    {
-    cout << noday << endl;
-    }
-   }
-   
-  return 0;  
-}
+cout << WEEK(5);
+return 0;
+    
+} 
